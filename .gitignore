@@ -1,0 +1,8 @@
+data/*
+!data/README.md
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+results/test_predictions.csv
+reports/

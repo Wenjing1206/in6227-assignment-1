@@ -1,0 +1,32 @@
+{
+  "rows_checked": 13333,
+  "selection_unchanged_after_test": true,
+  "models": {
+    "Logistic Regression": {
+      "all_metrics_match": true,
+      "confusion_matrix": [
+        [
+          9390,
+          775
+        ],
+        [
+          1357,
+          1811
+        ]
+      ]
+    },
+    "Random Forest": {
+      "all_metrics_match": true,
+      "confusion_matrix": [
+        [
+          9399,
+          766
+        ],
+        [
+          1383,
+          1785
+        ]
+      ]
+    }
+  }
+}

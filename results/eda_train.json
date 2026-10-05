@@ -1,0 +1,123 @@
+{
+  "raw_rows": 31112,
+  "labelled_rows": 31109,
+  "missing_label_rows": 3,
+  "numeric_features": [
+    "aptitude_score",
+    "performance_score",
+    "stability_index",
+    "load_ratio",
+    "index_weight",
+    "activity_duration",
+    "composite_rank"
+  ],
+  "categorical_features": [
+    "geological_era",
+    "weather_pattern",
+    "region",
+    "personal_interest",
+    "brew_preference",
+    "instrument",
+    "species",
+    "mineral_type"
+  ],
+  "raw_missing_by_column": {
+    "geological_era": 2,
+    "weather_pattern": 3,
+    "region": 4,
+    "aptitude_score": 4,
+    "performance_score": 2,
+    "stability_index": 2,
+    "personal_interest": 6,
+    "load_ratio": 2,
+    "brew_preference": 7,
+    "instrument": 3,
+    "species": 3,
+    "index_weight": 3,
+    "mineral_type": 3,
+    "activity_duration": 2,
+    "composite_rank": 1,
+    "label": 3
+  },
+  "labelled_feature_missing_cells": 47,
+  "labelled_feature_missing_rows": 47,
+  "labels": {
+    "no": 23645,
+    "yes": 7464
+  },
+  "positive_prevalence": 0.23993056671702723,
+  "duplicate_labelled_rows": 0,
+  "duplicate_feature_rows": 0,
+  "category_counts": {
+    "geological_era": 5,
+    "weather_pattern": 7,
+    "region": 21,
+    "personal_interest": 11,
+    "brew_preference": 2,
+    "instrument": 6,
+    "species": 7,
+    "mineral_type": 16
+  },
+  "explicit_unknown_counts": {
+    "geological_era": 0,
+    "weather_pattern": 0,
+    "region": 0,
+    "personal_interest": 1767,
+    "brew_preference": 0,
+    "instrument": 0,
+    "species": 1760,
+    "mineral_type": 0
+  },
+  "iqr_outliers": {
+    "aptitude_score": {
+      "lower_fence": 172.63499999999993,
+      "upper_fence": 540.5150000000001,
+      "outside_fences": 617,
+      "minimum": 90.0,
+      "maximum": 510.0
+    },
+    "performance_score": {
+      "lower_fence": -263.83750000000003,
+      "upper_fence": 830.5825,
+      "outside_fences": 154,
+      "minimum": 0.0,
+      "maximum": 1010.0
+    },
+    "stability_index": {
+      "lower_fence": 1.2344999999999997,
+      "upper_fence": 5.2785,
+      "outside_fences": 1128,
+      "minimum": 0.0,
+      "maximum": 4.625
+    },
+    "load_ratio": {
+      "lower_fence": 6.694499999999996,
+      "upper_fence": 40.234500000000004,
+      "outside_fences": 2526,
+      "minimum": 0.0,
+      "maximum": 143.717
+    },
+    "index_weight": {
+      "lower_fence": -5.545000000000002,
+      "upper_fence": 29.295,
+      "outside_fences": 1017,
+      "minimum": 0.0,
+      "maximum": 99.62
+    },
+    "activity_duration": {
+      "lower_fence": 46.45999999999998,
+      "upper_fence": 116.54000000000002,
+      "outside_fences": 5347,
+      "minimum": 0.0,
+      "maximum": 205.0
+    },
+    "composite_rank": {
+      "lower_fence": 0.7205000000000004,
+      "upper_fence": 5.7085,
+      "outside_fences": 115,
+      "minimum": 0.589,
+      "maximum": 6.876
+    }
+  },
+  "decision": "Keep all 15 features and all valid-label rows; retain extreme values and literal Unknown categories."
+}
