@@ -1,0 +1,53 @@
+{
+  "target": "label",
+  "seed": 42,
+  "folds": 3,
+  "split_strategy": "iid",
+  "split_reason": "Preserve the provided train/test split. No explicit subject identifier or timestamp is supplied; IID stratified CV is a working assumption, not a proven property of the data.",
+  "drop_columns": [],
+  "drop_reason": "Retain all 15 predictors. No documented identifier or leakage column is established; unfamiliar names do not justify deletion. Feature semantics and provenance remain unknown.",
+  "primary_metric": "f1_macro",
+  "metric_reason": "The minority yes class is about 24% of training labels; macro-F1 gives both classes equal weight. Also report accuracy, balanced accuracy and per-class recall.",
+  "numeric_imputation": "median",
+  "categorical_imputation": "most_frequent",
+  "min_frequency": 5,
+  "max_categories": 64,
+  "preprocessing_reason": "Use median imputation for numerical robustness and most-frequent imputation for sparse categorical missingness. Standardize numerical features only for Logistic Regression; OneHotEncode categorical features with unseen values ignored and rare categories grouped within each fold. Retain IQR-flagged values because no domain limits establish that they are errors. Do not engineer domain-derived features without a data dictionary.",
+  "models": [
+    {
+      "kind": "logistic_regression",
+      "reason": "A regularized linear baseline provides an efficient comparison to nonlinear tree interactions.",
+      "class_weight": "balanced",
+      "grid": {
+        "C": [
+          0.1,
+          1.0,
+          10.0
+        ]
+      }
+    },
+    {
+      "kind": "random_forest",
+      "reason": "Mixed numerical/categorical predictors may contain nonlinear interactions; bagged trees offer a contrasting inductive bias.",
+      "class_weight": "balanced_subsample",
+      "n_estimators": 160,
+      "grid": {
+        "max_depth": [
+          12,
+          null
+        ],
+        "min_samples_leaf": [
+          2
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "name": "Tian Wenjing",
+    "matric_number": "TO BE SUPPLIED",
+    "llm_model": "GPT-6 (exact serving model/version not exposed)",
+    "llm_interface": "Codex desktop Agent Harness (application version not exposed)",
+    "repository": "https://github.com/Wenjing1206/in6227-assignment-1/tree/main/variant2"
+  },
+  "discussion": "The feature meanings and collection process are undocumented, so statistical associations cannot establish causality or absence of target leakage. Stratification assumes independent rows. Class weighting is defensible under imbalance but may trade precision for recall; the current experiment does not include an unweighted ablation. The small prespecified grid controls cost rather than proving global optimality. External or group-aware validation is needed if collection dependencies exist."
+}

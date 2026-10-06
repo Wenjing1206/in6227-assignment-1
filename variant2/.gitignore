@@ -1,0 +1,9 @@
+# 中文备注：原始数据、逐行预测、模型、学生报告留在本地。
+*.joblib
+*.zip
+*.pdf
+predictions.csv
+.venv/
+__pycache__/
+*.pyc
+run/

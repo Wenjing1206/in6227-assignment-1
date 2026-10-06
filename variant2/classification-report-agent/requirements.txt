@@ -1,0 +1,6 @@
+pandas>=2.2,<4
+scikit-learn>=1.5,<2
+reportlab>=4,<6
+pypdf>=5,<7
+joblib>=1.4,<2
+# XLSX 输入另需 openpyxl；Parquet 输入另需 pyarrow。

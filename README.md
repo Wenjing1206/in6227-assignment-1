@@ -1,4 +1,10 @@
-# IN6227 Assignment 1 — Variant 1
+# IN6227 Assignment 1
+
+## Variant 2: reusable AI classification SKILL
+
+The reusable SKILL and its separately executed experiment are available in [variant2/](variant2/README.md). Start with [SKILL.md](variant2/classification-report-agent/SKILL.md) for the agent workflow, [the Chinese walkthrough](variant2/docs/SKILL-walkthrough.zh.md) for a paragraph-by-paragraph explanation, and [the saved metrics](variant2/results/metrics.json) for evidence. Variant 2 selects by CV macro-F1; the original Variant 1 below selects by Average Precision. Their configurations and results must not be mixed.
+
+## Variant 1: original implementation
 
 A reproducible comparison of **Logistic Regression** and **Random Forest** on the supplied binary classification dataset. The workflow covers training-data exploration, missing values, categorical encoding, hyperparameter selection, independent test evaluation, and verification of the reported metrics.
 

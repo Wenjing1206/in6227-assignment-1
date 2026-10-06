@@ -1,0 +1,6 @@
+{
+  "multiclass_internal_holdout": "passed",
+  "unlabeled_test_and_unseen_category": "passed",
+  "missing_training_target": "passed",
+  "saved_model_replay_10_rows": "passed"
+}
