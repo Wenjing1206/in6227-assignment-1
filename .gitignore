@@ -1,8 +1,7 @@
-data/*
-!data/README.md
+# 中文备注：本地环境、原始数据和个人报告不进入仓库。
 .venv/
 __pycache__/
 *.pyc
 .DS_Store
-results/test_predictions.csv
-reports/
+/data/
+/reports/

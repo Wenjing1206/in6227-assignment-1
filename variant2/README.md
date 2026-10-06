@@ -60,7 +60,3 @@ Random Forest was selected by CV macro-F1. Logistic Regression has higher minori
 `results/metrics.json` contains full-precision scores, candidate/fold CV scores, confusion matrices, software versions and input hashes. `results/training_decisions.json` preserves the configuration whose hash was stored during training; `decisions.json` may later have its report metadata updated without changing the experiment. `results/independent_verification.json` records count-based checks of Accuracy, macro-F1 and Balanced Accuracy from local row-level predictions. Tests cover multiclass/internal holdout, unlabeled test predictions, unseen categories, missing training targets, and saved-model preprocessing behavior.
 
 Course data, row-level predictions, the large trained model and reports containing student identifiers are not committed. They are regenerated locally. The report's Reflection must describe the student's actual oversight and manual checking; automated verification is not a substitute for that personal account. Human Reflection is being completed separately and is not asserted here.
-
-## Relationship to Variant 1
-
-The original implementation at the repository root is retained. It uses different preprocessing, hyperparameters and a different selection metric (Average Precision). Its results are a separate experiment. The Variant 2 report and Reflection must use the evidence inside this directory.
