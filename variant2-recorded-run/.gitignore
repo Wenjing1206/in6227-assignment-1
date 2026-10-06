@@ -1,0 +1,16 @@
+# 原始数据和逐行输出保留在本地。
+data/
+runs/
+outputs/
+predictions.csv
+sample_probabilities.csv
+split_assignments.csv
+
+# 本地运行环境和临时文件不进入仓库。
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
