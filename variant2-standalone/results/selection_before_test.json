@@ -1,0 +1,11 @@
+{
+  "selected_model": "LogisticRegression",
+  "primary_metric": "macro-F1",
+  "selection_basis": "train-only CV",
+  "candidate_cv": {
+    "LogisticRegression": 0.7616246862018903,
+    "RandomForest": 0.7616244591537086,
+    "GaussianNB": 0.6881250661734156
+  },
+  "created_utc": "2026-10-07T09:39:53.996852+00:00"
+}

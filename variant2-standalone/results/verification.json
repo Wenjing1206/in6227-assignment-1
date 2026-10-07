@@ -1,0 +1,205 @@
+{
+  "passed": 50,
+  "checks": [
+    {
+      "check": "row IDs unique",
+      "passed": true
+    },
+    {
+      "check": "test row IDs equal split assignments",
+      "passed": true
+    },
+    {
+      "check": "target exclusion count",
+      "passed": true
+    },
+    {
+      "check": "selection frozen before test",
+      "passed": true
+    },
+    {
+      "check": "winner is highest formal CV score",
+      "passed": true
+    },
+    {
+      "check": "CV fold assignments complete",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier confusion total",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier accuracy",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier macro_f1",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier balanced_accuracy",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier roc_auc",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier average_precision",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier no support",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier no recall",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier yes support",
+      "passed": true
+    },
+    {
+      "check": "DummyClassifier yes recall",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression confusion total",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression accuracy",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression macro_f1",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression balanced_accuracy",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression roc_auc",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression average_precision",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression no support",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression no recall",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression yes support",
+      "passed": true
+    },
+    {
+      "check": "LogisticRegression yes recall",
+      "passed": true
+    },
+    {
+      "check": "RandomForest confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "RandomForest confusion total",
+      "passed": true
+    },
+    {
+      "check": "RandomForest accuracy",
+      "passed": true
+    },
+    {
+      "check": "RandomForest macro_f1",
+      "passed": true
+    },
+    {
+      "check": "RandomForest balanced_accuracy",
+      "passed": true
+    },
+    {
+      "check": "RandomForest roc_auc",
+      "passed": true
+    },
+    {
+      "check": "RandomForest average_precision",
+      "passed": true
+    },
+    {
+      "check": "RandomForest no support",
+      "passed": true
+    },
+    {
+      "check": "RandomForest no recall",
+      "passed": true
+    },
+    {
+      "check": "RandomForest yes support",
+      "passed": true
+    },
+    {
+      "check": "RandomForest yes recall",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB confusion total",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB accuracy",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB macro_f1",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB balanced_accuracy",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB roc_auc",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB average_precision",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB no support",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB no recall",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB yes support",
+      "passed": true
+    },
+    {
+      "check": "GaussianNB yes recall",
+      "passed": true
+    }
+  ]
+}

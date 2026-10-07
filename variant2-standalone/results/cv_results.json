@@ -1,0 +1,112 @@
+[
+  {
+    "model": "LogisticRegression",
+    "parameters": {
+      "model__C": 0.1,
+      "model__class_weight": null
+    },
+    "mean_macro_f1": 0.7595785061274759,
+    "std_macro_f1": 0.0038229443752756834,
+    "fold_scores": [
+      0.7555378824877392,
+      0.7584879698320903,
+      0.7647096660625982
+    ]
+  },
+  {
+    "model": "LogisticRegression",
+    "parameters": {
+      "model__C": 0.1,
+      "model__class_weight": "balanced"
+    },
+    "mean_macro_f1": 0.753578854331431,
+    "std_macro_f1": 0.0036357181587520796,
+    "fold_scores": [
+      0.7581864864202768,
+      0.7492989399354075,
+      0.7532511366386087
+    ]
+  },
+  {
+    "model": "LogisticRegression",
+    "parameters": {
+      "model__C": 1.0,
+      "model__class_weight": null
+    },
+    "mean_macro_f1": 0.7616246862018903,
+    "std_macro_f1": 0.003758675857047647,
+    "fold_scores": [
+      0.7568958591577564,
+      0.7618866933913163,
+      0.7660915060565985
+    ]
+  },
+  {
+    "model": "LogisticRegression",
+    "parameters": {
+      "model__C": 1.0,
+      "model__class_weight": "balanced"
+    },
+    "mean_macro_f1": 0.7536924950272819,
+    "std_macro_f1": 0.0031746315409949214,
+    "fold_scores": [
+      0.7578056525047892,
+      0.7500774299056749,
+      0.7531944026713815
+    ]
+  },
+  {
+    "model": "RandomForest",
+    "parameters": {
+      "model__class_weight": "balanced",
+      "model__max_depth": 12
+    },
+    "mean_macro_f1": 0.7496263594992133,
+    "std_macro_f1": 0.0027253619817770723,
+    "fold_scores": [
+      0.7510879952275094,
+      0.7458069962418582,
+      0.7519840870282721
+    ]
+  },
+  {
+    "model": "RandomForest",
+    "parameters": {
+      "model__class_weight": "balanced",
+      "model__max_depth": null
+    },
+    "mean_macro_f1": 0.7616244591537086,
+    "std_macro_f1": 0.004167462193782307,
+    "fold_scores": [
+      0.7663238647659787,
+      0.7561944476173599,
+      0.7623550650777872
+    ]
+  },
+  {
+    "model": "GaussianNB",
+    "parameters": {
+      "model__var_smoothing": 1e-08
+    },
+    "mean_macro_f1": 0.6881250661734156,
+    "std_macro_f1": 0.0033344848323478772,
+    "fold_scores": [
+      0.6919999167550734,
+      0.6885151574503275,
+      0.6838601243148462
+    ]
+  },
+  {
+    "model": "GaussianNB",
+    "parameters": {
+      "model__var_smoothing": 1e-09
+    },
+    "mean_macro_f1": 0.6668947064274069,
+    "std_macro_f1": 0.014803892649168473,
+    "fold_scores": [
+      0.6834861854058021,
+      0.6696567684979343,
+      0.6475411653784842
+    ]
+  }
+]
