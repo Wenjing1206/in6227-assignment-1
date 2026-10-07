@@ -16,7 +16,7 @@ Use `SKILL.md` in a compatible agent environment and provide an actual dataset p
 
 The skill requires target validation where semantics are ambiguous, fold-local preprocessing, justified model selection, comparable evaluation, and traceable report metrics. Human Reflection must be based on the student's actual actions and checks.
 
-The root skill is the current installed revision. The recorded run used the earlier snapshot in `skill-at-run/SKILL.md`. Both file hashes are in `docs/provenance.json`; no new experiment was run merely to prepare this repository.
+此目录的 `SKILL.md` 是当时整理的 revision；实际记录的实验使用 `skill-at-run/SKILL.md` 中的 snapshot。两份文件的 hash 保存在 `docs/provenance.json`。仓库后来又新增了独立的 [3–5 classifier SKILL](../variant2/tabular-classification-variant2/SKILL.md)，因此这里不再称为整个仓库的 current skill。整理本目录时没有重新运行实验。
 
 ## Recorded experiment
 
@@ -51,7 +51,7 @@ Choose a new output directory for each experiment. The analysis refuses to overw
 
 ## Files
 
-- `SKILL.md`: current reusable skill.
+- `SKILL.md`: this recorded run's later reusable skill revision.
 - `skill-at-run/SKILL.md`: snapshot used for the recorded experiment.
 - `scripts/`: experiment, independent metric verification, and report rendering.
 - `results/`: aggregate metrics, all CV candidates, data profile, warnings and verification record.

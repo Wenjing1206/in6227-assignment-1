@@ -1,6 +1,6 @@
-# Variant 2: Reusable classification SKILL
+# Variant 2: Original executable workflow
 
-A dataset-path-driven SKILL for an AI Agent Harness to inspect tabular data, justify preprocessing and classifier choices, execute an end-to-end classification workflow, and generate a two-page PDF report. The AI makes decisions in the harness; the Python helper executes the recorded configuration and does not call an LLM API.
+这是仓库中最初的可运行 Variant 2 实现及其独立实验结果。它不等同于 [`variant2-recorded-run/`](../variant2-recorded-run/README.md) 的第二次记录，也不等同于后来只发布说明的 [3–5 classifier SKILL](tabular-classification-variant2/SKILL.md)。本目录的 SKILL 从 dataset path 出发，由 AI Agent Harness 决定 preprocessing 和模型；Python helper 执行记录下来的配置，不调用 LLM API。
 
 Start with **[SKILL.md](classification-report-agent/SKILL.md)**. The [Chinese walkthrough](docs/SKILL-walkthrough.zh.md) explains its paragraphs, their implementation and the limits of the current helper.
 

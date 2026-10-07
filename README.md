@@ -1,28 +1,13 @@
-# IN6227 Assignment 1 — Variant 2
+# IN6227 Assignment 1 · Variant 2
 
-A reusable AI SKILL for end-to-end tabular classification and automated report generation, with recorded decisions, cross-validation, independent metric verification, and reproducibility tests.
+这个仓库保存 Variant 2 的 reusable SKILL、两次**独立**的分类实验记录，以及相应的复现说明。三个目录的用途不同；模型配置、CV 分数和 test 分数不能混为一次实验。
 
-## Start here
+| 目录 | 用途 | 从这里开始 |
+| --- | --- | --- |
+| [`variant2/`](variant2/README.md) | 最初的可运行实现：AI 编写 `decisions.json`，Python helper 执行 binary/multiclass workflow；有测试和 aggregate results。 | [实现与复现说明](variant2/README.md) · [配套 SKILL](variant2/classification-report-agent/SKILL.md) |
+| [`variant2-recorded-run/`](variant2-recorded-run/README.md) | 后来单独保存的 train/test 实验：包含当时的 skill snapshot、代码、CV 明细和 aggregate evidence。 | [运行记录与复现说明](variant2-recorded-run/README.md) · [当次 SKILL](variant2-recorded-run/skill-at-run/SKILL.md) |
+| [`variant2/tabular-classification-variant2/`](variant2/tabular-classification-variant2/SKILL.md) | 新整理的 **3–5 个正式 classifier** 工作流说明。此目录目前只发布 `SKILL.md`；对应的新一轮脚本、逐行预测和 PDF 保存在本地，未作为这个仓库中的可复现实验发布。 | [新 SKILL.md](variant2/tabular-classification-variant2/SKILL.md) |
 
-- **[SKILL.md](variant2/classification-report-agent/SKILL.md)** — instructions for the AI Agent Harness.
-- **[Implementation and reproduction guide](variant2/README.md)** — setup, workflow, results and limitations.
-- **[逐段中文讲解](variant2/docs/SKILL-walkthrough.zh.md)** — how each SKILL paragraph works.
-- **[Experiment decisions](variant2/decisions.json)** and **[verified results](variant2/results/metrics.json)** — the rationale and numerical evidence for this run.
+**想直接运行已发布代码**：从 [`variant2/README.md`](variant2/README.md) 开始；如果要复现第二次已记录实验，按 [`variant2-recorded-run/README.md`](variant2-recorded-run/README.md) 操作。**想参考最新的 3–5 模型工作流要求**：阅读 [`variant2/tabular-classification-variant2/SKILL.md`](variant2/tabular-classification-variant2/SKILL.md)。它是工作流指令，不含新的执行脚本。
 
-The AI selects and justifies preprocessing and models; Python executes the recorded configuration. The supplied experiment selects Random Forest by training-only CV macro-F1. Its test macro-F1 is 0.7721, while Logistic Regression has higher minority-class recall. Model preference depends on the evaluation objective.
-
-## Reproduce
-
-Follow the commands in [variant2/README.md](variant2/README.md), starting from the `variant2/` directory. The recorded environment uses Python 3.14.0 and the included dependency lockfile. Supply the course dataset locally.
-
-Raw course data, row-level predictions, the trained model and student submission reports are not included in the repository. The report and Reflection are completed locally using verified results and the student's actual review.
-
-## Additional recorded run
-
-A separately recorded experiment and the current reusable skill are available in **[variant2-recorded-run/](variant2-recorded-run/README.md)**. This directory preserves its own code, dependency versions, CV results and the skill snapshot used for that run. It does not replace the original `variant2/` implementation or its results.
-
-- [Current SKILL.md](variant2-recorded-run/SKILL.md) and [skill snapshot used for this run](variant2-recorded-run/skill-at-run/SKILL.md).
-- [Prediction probability examples and Reflection verification guide](variant2-recorded-run/docs/probability-and-reflection-guide.md).
-- [Recorded aggregate metrics](variant2-recorded-run/results/metrics.json): test macro-F1 is 0.7619 for LogisticRegression and 0.7602 for RandomForest. RandomForest was selected before test scoring by a small training-CV advantage.
-
-These values belong to the additional run and must not be combined with the original experiment's scores or configuration. Reproduction commands for this run start from `variant2-recorded-run/`.
+原始课程数据、逐行 predictions、训练后的模型，以及含个人信息的最终提交 PDF 均未上传。Reflection 需要基于学生实际完成的 Human oversight、Critical evaluation 和 manual check；仓库中的自动验证结果不能代替个人经历。本仓库不代表已向 NTULearn 提交。
