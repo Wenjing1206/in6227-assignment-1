@@ -1,9 +1,11 @@
-# 中文备注：原始数据、逐行预测、模型、学生报告留在本地。
-*.joblib
-*.zip
+# 中文备注：原始课程数据、逐行输出与个人提交材料只保留在本地。
+data/
+runs/
 *.pdf
 predictions.csv
-.venv/
+split_assignments.csv
+Reflection*.md
 __pycache__/
 *.pyc
-run/
+.venv/
+.DS_Store

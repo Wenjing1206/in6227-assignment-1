@@ -23,4 +23,10 @@ description: Inspect a tabular classification dataset, build leakage-safe sklear
 - 课程 Reflection 覆盖 Human oversight、Critical evaluation、Trustworthiness。只写实际发生的用户决策和用户亲自核验；尚未取得这些信息时写可提交前补全的 draft，并给出一个具体可复算的检查项，不虚构第一人称经历。
 - 只有用户明确要求时才上传 GitHub；发布前检查仓库和范围。上传范围以用户本次指令为准。不要上传原始数据、逐行 predictions 或私人信息，除非用户明确要求。
 
+## IN6227 提交格式
+
+最终交付为**单个 PDF**：主报告不超过两页，短 Reflection 放在后续页且不计入主报告页数。第一页顶部必须有 matric number、full name、`IN6227-Assignment-1`、`Variant-2`。主报告应标明实际使用的 LLM model name/version、LLM interface 与可确认的 interface version，并附上 GitHub 中此 `SKILL.md` 的链接。缺失的身份、版本或个人 Reflection 要标为待补，不能把 draft 当成最终提交版。
+
+本目录附带的 Python scripts 是这次 binary 数据的参考实现。面对 multiclass、group/time 依赖、特殊缺失编码或其他新数据结构，先由 AI 根据 inspection 改写 candidate models、split、Pipeline 与 metrics；不能直接复用本次固定的 yes/no 配置并宣称已泛化。
+
 执行时将脚本和结果保存在独立项目目录中；不得把一次数据集的固定字段、类别、模型结果写成通用规则。

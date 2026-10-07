@@ -1,5 +1,0 @@
-{
-  "current_skill_sha256": "8b286aa697107842b91a399d105cab5bc621bdfe1153c486e646d2a1d4fbb10d",
-  "skill_used_for_recorded_run_sha256": "140b09134c8675e49d4350b1673ffff7107e1a0395e0ee6a3caf85c37fc71b9b",
-  "note": "Root SKILL.md is the current installed revision. The recorded experiment used the snapshot in skill-at-run/SKILL.md. The newer revision has not been rerun in this preparation step. Repository manifest replaces the original local dataset path with data/dataset.zip; original local evidence is unchanged."
-}
